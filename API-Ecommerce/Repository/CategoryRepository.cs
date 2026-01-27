@@ -6,7 +6,9 @@ namespace API_Ecommerce.Repository;
 public class CategoryRepository : ICategoryRepository
 {
     private readonly ApplicationDbContext _db;
-    
+
+    ICollection<Category> ICategoryRepository.GetCategories => throw new NotImplementedException();
+
     public CategoryRepository(ApplicationDbContext db)
     {
         _db = db;
