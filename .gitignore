@@ -1,2 +1,19 @@
+# .NET build
+bin/
+obj/
+
+# User secrets / config
 appsettings.json
-appsettings.Development.json
+appsettings.*.json
+!appsettings.Development.json
+
+# Environment files
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
