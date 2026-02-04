@@ -4,8 +4,8 @@ namespace API_Ecommerce.Repository.IRepository;
 
 public interface ICategoryRepository
 {
-    ICollection<Category> GetCategories { get;  }
-    Category GetCategory(int id);
+    ICollection<Category> GetCategories();
+    Category? GetCategory(int id);
     bool CategoryExists(int id);
     bool CategoryExists(string name);
     bool CreateCategory(Category category);
@@ -13,5 +13,4 @@ public interface ICategoryRepository
     bool DeleteCategory(Category category);
 
     bool Save();
-
 }
